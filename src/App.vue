@@ -72,5 +72,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/normalize.css";
 @import "@/style.scss";
+@import "@/mediaquerie.scss";
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap");
 </style>

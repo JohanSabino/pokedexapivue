@@ -1,0 +1,170 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  template {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+  }
+  header {
+    width: 100%;
+    background-color: #ce2211;
+  }
+  header h1 {
+    margin: 0 auto 20px;
+    padding: 20px 0 0 0;
+    width: 50%;
+  }
+  header div {
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+    align-content: center;
+    box-sizing: border-box;
+  }
+
+  label {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    background-color: #00bac4ef;
+    color: #ffdcaa;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
+  label input {
+    width: 80%;
+  }
+  label button {
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 15%;
+    background-color: #006368;
+    color: #ffdcaa;
+    transition: 0.3s;
+  }
+  label button:hover {
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px #000000;
+    text-shadow: 0px 0px 1px#000000;
+    border-radius: 15%;
+    background-color: #038e96;
+    color: #ffdcaa;
+  }
+  input[type="text"] {
+    border-radius: 10px;
+    outline: none;
+    border: 0.5px solid black;
+  }
+  .main {
+    margin: 30px auto;
+    font-size: 1.2rem;
+    background-color: $pokedex-green;
+    width: 80%;
+    height: auto;
+    background-color: #00a0a8;
+
+    background-repeat: round;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
+  .pokemonCard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    & .nameImage {
+      width: 100%;
+      padding: 0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      & .pokemonName {
+        text-transform: capitalize;
+        font-size: 40px;
+        width: 100%;
+        margin: 0 10px 0 0;
+      }
+      & h1 {
+        padding: 0;
+        color: #ffcc00;
+        -webkit-text-stroke: 1px #0075be;
+      }
+      & img {
+        width: 70%;
+        margin: 0;
+        background-color: #ffffff;
+        border-radius: 35%;
+        border: 2px solid black;
+        transition: 0.5s;
+      }
+      & img:hover {
+        width: 70%;
+        margin: 0;
+        background-color: #effcd5;
+        border-radius: 35%;
+        border: 2px solid black;
+        box-shadow: 2px 3px 5px black;
+      }
+    }
+    & .type {
+      font-size: 25px;
+      width: 80%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      & h2 {
+        color: #ffcc00;
+        -webkit-text-stroke: 1px #0075be;
+      }
+    }
+    & .type li {
+      width: 80%;
+      color: #0c3348;
+      padding: 10px;
+      text-align: center;
+      color: #1c4cbd;
+    }
+    & .stats {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    & .stats li {
+      align-self: center;
+      margin-top: 20px;
+      padding: 5px;
+      color: #effcd5;
+      border: 2px solid black;
+      border-radius: 15px;
+      background-color: rgba(229, 66, 34, 0.9);
+    }
+  }
+  ul {
+    padding: 0;
+  }
+  .type {
+    & li {
+      list-style: none;
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+    }
+  }
+  .stats {
+    & li {
+      list-style: none;
+      text-transform: uppercase;
+    }
+    & h2 {
+      font-size: 40px;
+      color: #ffcc00;
+      -webkit-text-stroke: 1px #0075be;
+    }
+  }
+}
